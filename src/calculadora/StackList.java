@@ -5,11 +5,10 @@ import java.util.List;
 
 public class StackList<E> extends AbstractStack<E>
 {
-	protected List<E> data;
+    protected List<E> data;
 
 	public StackList()
-	// post: constructs a new, empty stack
-	{
+        {
 		data = new List<E>();
 	}
 

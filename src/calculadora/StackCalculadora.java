@@ -11,19 +11,15 @@ public class StackCalculadora
 	public static void main(String[] args)
 	{
 		Scanner entrada = new Scanner(System.in);	//objeto de tipo Scanner
-		StackFactory<String> sFactory = new StackFactory<String>()	// llamada al factory:
+                System.out.println("Ingrese el tipo de instancia que desea\nAL para ArrayList\nV para Vector");
+		entrada.nextLine();
+                
+		StackFactory<String> sFactory = new StackFactory<String>();	// llamada al factory:
 		// Solicitar la implementacion deseada del Stack:
 		//  AL:	implementacion con ArrayList
 		//  V:  implementacion con Vector
 		//	L: 	implementacion List
-		Stack<String> miStack = sFactory.getStack(entrada);
-		
-		System.out.println("Ingrese un entero: ");
-		a=mi_objeto.nextInt();
-		mi_objeto.nextLine();
-
-		Scanner Screen = new Scanner(System.in);
-		StackVector<String> lista = new StackVector<String>();
+		Stack<String> miStack = sFactory.getStack(String.valueOf(entrada));
 		
 		/*
 		miStack.push("Adios");  //1
