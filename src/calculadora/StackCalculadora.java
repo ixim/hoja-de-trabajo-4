@@ -3,8 +3,8 @@ package calculadora;
 
 import java.util.Scanner;
 import java.io.*;
-import java.util.List;
-import java.util.Vector;
+/*import java.util.List;
+import java.util.Vector;*/
 
 public class StackCalculadora
 {
@@ -54,24 +54,24 @@ public class StackCalculadora
 				}
 				if (caracter1 == 45)//resta
 				{
-					caracter1 = Integer.parseInt(lista.pop());
-					caracter2 = Integer.parseInt(lista.pop());
+					caracter1 = Integer.parseInt(miStack.pop());
+					caracter2 = Integer.parseInt(miStack.pop());
 					resultado = caracter2-caracter1;//resta valores
 					System.out.print(caracter2+"-"+caracter1+"="+resultado+"\n");
 					miStack.push(String.valueOf(resultado));//ingresa el resultado en el stack
 				}
 				if (caracter1 == 42)//multiplicacion
 				{
-					caracter1 = Integer.parseInt(lista.pop());
-					caracter2 = Integer.parseInt(lista.pop());
+					caracter1 = Integer.parseInt(miStack.pop());
+					caracter2 = Integer.parseInt(miStack.pop());
 					resultado = caracter1*caracter2;//multiplica valores
 					System.out.print(caracter2+"*"+caracter1+"="+resultado+"\n");
 					miStack.push(String.valueOf(resultado));//ingresa el resultado en el stack
 				}
 				if (caracter1 == 47)//division
 				{
-					caracter1 = Integer.parseInt(lista.pop());
-					caracter2 = Integer.parseInt(lista.pop());
+					caracter1 = Integer.parseInt(miStack.pop());
+					caracter2 = Integer.parseInt(miStack.pop());
 					resultado = caracter2/caracter1;//divide valores
 					System.out.print(caracter2+"/"+caracter1+"="+resultado+"\n");
 					miStack.push(String.valueOf(resultado));//ingresa el resultado en el stack
