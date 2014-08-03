@@ -20,7 +20,7 @@ public class StackCalculadora
 		//  V:  implementacion con Vector
 		//  L: 	implementacion List
 		Stack<String> miStack = sFactory.getStack(String.valueOf(entrada));
-		
+                
 		try
 		{
         		FileReader archivo = new FileReader("datos.txt"); //Abrir el fichero indicado en la variable 
