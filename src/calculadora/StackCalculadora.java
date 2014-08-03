@@ -3,8 +3,6 @@ package calculadora;
 
 import java.util.Scanner;
 import java.io.*;
-import java.util.List;
-import java.util.Vector;
 
 public class StackCalculadora
 {
@@ -74,6 +72,5 @@ public class StackCalculadora
 		{
 			System.out.println("Error de lectura del fichero");
 		}
-	
   }
 }
