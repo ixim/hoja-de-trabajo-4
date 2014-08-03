@@ -23,7 +23,7 @@ public class StackCalculadora
                 
 		try
 		{
-        		FileReader archivo = new FileReader("datos.txt"); //Abrir el fichero indicado en la variable 
+                        FileReader archivo = new FileReader("datos.txt"); //Abrir el fichero indicado en la variable 
                         int caracter1 = 0,caracter2 = 0,resultado = 0;
 			do
 			{
