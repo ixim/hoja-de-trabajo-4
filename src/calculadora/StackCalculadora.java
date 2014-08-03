@@ -15,22 +15,12 @@ public class StackCalculadora
                 System.out.println("Ingrese el tipo de instancia que desea\nAL para ArrayList\nV para Vector");
 		a = entrada.nextLine();
                 
-		StackFactory<String> sFactory = new StackFactory<String>();	// llamada al factory:
+		StackFactory<String> sFactory = new StackFactory<String>();	// llamada al factory
 		// Solicitar la implementacion deseada del Stack:
 		//  AL:	implementacion con ArrayList
 		//  V:  implementacion con Vector
-		//	L: 	implementacion List
+		//  L: 	implementacion List
 		Stack<String> miStack = sFactory.getStack(String.valueOf(entrada));
-		
-		/*
-		miStack.push("Adios");  //1
-		miStack.push("Hola");   //2
-
-		String cadena = miStack.pop();
-		System.out.println(cadena);
-		cadena = miStack.pop();
-		System.out.println(cadena);
-		*/
 		
 		try
 		{
