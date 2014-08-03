@@ -17,11 +17,12 @@ public class StackCalculadora
 		//  AL:	implementacion con ArrayList
 		//  V:  implementacion con Vector
 		//  L: 	implementacion List
-		Stack<String> miStack = sFactory.getStack(String.valueOf(entrada));
+		Stack<String> miStack = sFactory.getStack(a);
                 
 		try
 		{
                         FileReader archivo = new FileReader("datos.txt"); //Abrir el fichero indicado en la variable 
+                        entrada.nextLine();
                         int caracter1 = 0,caracter2 = 0,resultado = 0;
 			do
 			{

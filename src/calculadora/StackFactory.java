@@ -1,5 +1,4 @@
 
-
 package calculadora;
 
 class StackFactory<E> 
