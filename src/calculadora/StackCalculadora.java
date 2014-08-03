@@ -10,10 +10,9 @@ public class StackCalculadora
 {
 	public static void main(String[] args)
 	{
-                String a;
 		Scanner entrada = new Scanner(System.in);	//objeto de tipo Scanner
                 System.out.println("Ingrese el tipo de instancia que desea\nAL para ArrayList\nV para Vector");
-		a = entrada.nextLine();
+		String a = entrada.nextLine();
                 
 		StackFactory<String> sFactory = new StackFactory<String>();	// llamada al factory
 		// Solicitar la implementacion deseada del Stack:
