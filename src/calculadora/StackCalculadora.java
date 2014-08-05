@@ -23,7 +23,6 @@ public class StackCalculadora
 		try
 		{
                         FileReader archivo = new FileReader("C:\\Users\\Dila Margarita\\Documents\\ixim\\UVG\\sexto semestre\\algoritmos y estructura de datos\\hoja  de trabajo 4 netbeans\\Calculadora\\src\\calculadora\\datos.txt"); //Abrir el fichero indicado en la variable 
-                       // entrada.nextLine();//EL ERROR ES LA LINEA ANTERIOR
                         int caracter1 = 0,caracter2 = 0,resultado = 0;
 			do
 			{
