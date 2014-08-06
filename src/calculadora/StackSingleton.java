@@ -1,17 +1,17 @@
 
 package calculadora;
 
-public class StackSingleton<F>
+public class StackSingleton
 {
-    private static <F> instance;
+    private static StackSingleton instance;
     
-    private StackSingleton(){}
+    private StackSingleton(){}//constructor
     
     public static StackSingleton getInstance()
     {
         if (instance == null)//aqui es donde se verifica si ya ha sido creado algo o no
         {
-            instance = new <F>;//aqui hiria la comparacion
+            instance = new StackSingleton();//aqui hiria la comparacion
         }
         return instance;
     }

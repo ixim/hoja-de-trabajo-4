@@ -1,7 +1,7 @@
 
 package calculadora;
 
-public interface StackLista<F>
+public interface InterfazLista<F>
 {
     public void push(F item);
     // post: el item es agregado al stack. Sera
