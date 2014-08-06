@@ -10,10 +10,12 @@ class StackFactory<E>
     // seleccion de la implementacion a utilizar:
 	if (entry.equals("AL"))
 		return new StackArrayList<E>(); //regresa ArrayList
+      	if (entry.equals("V"))
+                return new StackVector<E>(); //regresa Vector
 	if (entry.equals("L"))
+        {
                 StackSingleton<String> sSingleton = new StackSingleton<String>();
-                Lista<String> lista = sSingleton.getStackLista(a);
-	else
-		return new StackVector<E>(); //regresa Vector
+                StackLista<String> lista = sSingleton.getStackLista(a);
+        }
     }
 }

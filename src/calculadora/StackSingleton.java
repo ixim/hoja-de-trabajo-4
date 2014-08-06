@@ -9,7 +9,7 @@ class StackSingleton<F>
 	if (entry.equals("S"))
 		return new Single<F>(); //regresa ArrayList
 	if (entry.equals("D"))
-                return new Double<F>();
+                return new DoubleLista<F>();
 	else
 		return new Circular<F>(); //regresa Vector
     }
