@@ -14,8 +14,9 @@ class StackFactory<E>
                 return new StackVector<E>(); //regresa Vector
 	if (entry.equals("L"))
         {
-                StackSingleton<String> sSingleton = new StackSingleton<String>();
-                StackLista<String> lista = sSingleton.getStackLista(a);
+            StackSingleton lista = StackSingleton.getInstance();
+            return lista;
         }
+        return null;
     }
 }
