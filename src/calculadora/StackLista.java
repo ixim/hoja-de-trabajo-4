@@ -1,15 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 package calculadora;
 
-/**
- *
- * @author Dila Margarita
- */
-public interface StackLista {
-    
+public interface StackLista<F>
+{
+    public void push(F item);
+    // post: el item es agregado al stack. Sera
+    //       el proximo en salir
+    public int size();
+    //post: regresa la cantidad de elementos
+//      en el stack
 }
