@@ -13,6 +13,7 @@ public class StackCalculadora
                 System.out.println("Ingrese el tipo de instancia que desea\nAL para ArrayList\nV para Vector\nL para lista");
 		String a = entrada.nextLine();
                 
+                //if (a.equals("AL")||a.equals("V")){}
 		StackFactory<String> sFactory = new StackFactory<String>();	// llamada al factory
 		// Solicitar la implementacion deseada del Stack:
 		//  AL:	implementacion con ArrayList
