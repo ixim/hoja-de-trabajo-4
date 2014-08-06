@@ -1,19 +1,20 @@
 
 package calculadora;
 
-public class StackSingleton
+class StackSingleton<T>
 {
-    private static StackSingleton instance;
+    protected InterfazLista<T> instancia;
     
     private StackSingleton(){}//constructor
     
-    public static StackSingleton getInstance()
+    //public Stack<E> getStack(String entry) 
+    public InterfazLista<T> getInstance(String entry)
     {
-        if (instance == null)//aqui es donde se verifica si ya ha sido creado algo o no
+        if (instancia == null)//aqui es donde se verifica si ya ha sido creado algo o no
         {
-            instance = new StackSingleton();//aqui hiria la comparacion
+                instancia = new SingleLista<T>();//aqui hiria la comparacion
         }
-        return instance;
+        return instancia;
     }
 }
         // seleccion de la implementacion a utilizar:
@@ -23,4 +24,4 @@ public class StackSingleton
                 return new DoubleLista<F>();
 	else
 		return new Circular<F>(); //regresa Vector*/
-}
+
