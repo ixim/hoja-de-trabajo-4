@@ -5,7 +5,7 @@ class StackSingleton<T>
 {
     protected InterfazLista<T> instancia;
     
-    private StackSingleton(){}//constructor
+    public StackSingleton(){}//constructor
     
     //public Stack<E> getStack(String entry) 
     public InterfazLista<T> getInstance(String entry)

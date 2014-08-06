@@ -10,7 +10,7 @@ public class StackCalculadora
 	public static void main(String[] args)
 	{
 		Scanner entrada = new Scanner(System.in);	//objeto de tipo Scanner
-                System.out.println("Ingrese el tipo de instancia que desea\nAL para ArrayList\nV para Vector");
+                System.out.println("Ingrese el tipo de instancia que desea\nAL para ArrayList\nV para Vector\nL para lista");
 		String a = entrada.nextLine();
                 
 		StackFactory<String> sFactory = new StackFactory<String>();	// llamada al factory
@@ -21,8 +21,9 @@ public class StackCalculadora
 		Stack<String> miStack = sFactory.getStack(a);
                 
 		try
-		{
-                        FileReader archivo = new FileReader("C:\\Users\\Dila Margarita\\Documents\\ixim\\UVG\\sexto semestre\\algoritmos y estructura de datos\\hoja  de trabajo 4 netbeans\\Calculadora\\src\\calculadora\\datos.txt"); //Abrir el fichero indicado en la variable 
+		{    
+                    FileReader archivo = new FileReader("C:\\Users\\Dila Margarita\\Documents\\ixim\\UVG\\semestre 6\\algoritmos y estructura de datos\\hoja  de trabajo 4 netbeans\\Calculadora\\src\\calculadora\\datos.txt"); //Abrir el fichero indicado en la variable 
+                        
                         int caracter1 = 0,caracter2 = 0,resultado = 0;
 			do
 			{
